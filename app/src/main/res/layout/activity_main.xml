@@ -40,4 +40,12 @@
         android:padding="10dp"
         android:layout_marginTop="15dp"/>
 
+    <Button
+        android:id="@+id/tvKeyboardListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="键盘打开关闭监听"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+
 </LinearLayout>

@@ -34,5 +34,11 @@ class MainActivity : AppCompatActivity() {
             intent.setClass(this, ScrollActivity::class.java)
             startActivity(intent)
         }
+
+        tvKeyboardListen.setOnClickListener {
+            var intent = Intent()
+            intent.setClass(this, KeyBoardShowHideListenActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

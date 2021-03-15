@@ -68,7 +68,7 @@ public class SoftKeyBoardListener {
     }
 
     public static void setListener(Activity activity, OnSoftKeyBoardChangeListener onSoftKeyBoardChangeListener) {
-        com.chiatai.iorder.util.SoftKeyBoardListener softKeyBoardListener = new com.chiatai.iorder.util.SoftKeyBoardListener(activity);
+        SoftKeyBoardListener softKeyBoardListener = new SoftKeyBoardListener(activity);
         softKeyBoardListener.setOnSoftKeyBoardChangeListener(onSoftKeyBoardChangeListener);
     }
 }
