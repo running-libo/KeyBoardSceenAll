@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SceenTwoActivity">
+    tools:context=".SearchActionActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/viewSearch"
@@ -38,6 +38,8 @@
             android:textColor="#999999"
             app:layout_constraintLeft_toRightOf="@id/ivSearch"
             android:background="@null"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
             android:gravity="center_vertical"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -45,23 +47,4 @@
             android:layout_marginLeft="8dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/btnOpenKeyBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="打开软键盘"
-        app:layout_constraintTop_toBottomOf="@id/viewSearch"
-        android:layout_marginTop="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <Button
-        android:id="@+id/btnCloseKeyBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="关闭软键盘"
-        app:layout_constraintTop_toBottomOf="@id/btnOpenKeyBoard"
-        android:layout_marginTop="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

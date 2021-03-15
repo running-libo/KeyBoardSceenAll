@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             intent.setClass(this, SceenTwoActivity::class.java)
             startActivity(intent)
         }
+
+        tvSearch.setOnClickListener {
+            var intent = Intent()
+            intent.setClass(this, SearchActionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

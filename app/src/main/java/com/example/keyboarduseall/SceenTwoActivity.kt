@@ -14,9 +14,19 @@ class SceenTwoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sceen_two)
 
-        showSoftInput(this, etSearch)
+        btnCloseKeyBoard.setOnClickListener {
+            closeSoftInput(etSearch, this@SceenTwoActivity)
+        }
+
+        btnOpenKeyBoard.setOnClickListener {
+            showSoftInput(this, etSearch)
+        }
+        btnOpenKeyBoard.performClick()
     }
 
+    /**
+     * 自动打开键盘
+     */
     private fun showSoftInput(context: Context, et: EditText) {
         Timer().schedule(object : TimerTask() {
             override fun run() {
@@ -32,5 +42,15 @@ class SceenTwoActivity : AppCompatActivity() {
                 }
             }
         }, 100)
+    }
+
+    /**
+     * 自动关闭键盘
+     */
+    private fun closeSoftInput(editText: EditText, context: Context) {
+        val imm = context.getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        if (imm.isActive) {
+            imm.hideSoftInputFromWindow(editText.applicationWindowToken, 0)
+        }
     }
 }
