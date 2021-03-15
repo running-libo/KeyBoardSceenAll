@@ -22,7 +22,6 @@ class SearchActionActivity : AppCompatActivity() {
                 }
                 return false
             }
-
         })
     }
 }

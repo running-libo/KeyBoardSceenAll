@@ -28,5 +28,11 @@ class MainActivity : AppCompatActivity() {
             intent.setClass(this, SearchActionActivity::class.java)
             startActivity(intent)
         }
+
+        tvScroll.setOnClickListener {
+            var intent = Intent()
+            intent.setClass(this, ScrollActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

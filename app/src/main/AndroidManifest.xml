@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KeyBoardUseAll">
-        <activity android:name=".SearchActionActivity"></activity>
+        <activity android:name=".KeyBoardShowHideListenActivity"></activity>
+        <activity android:name=".ScrollActivity" />
+        <activity android:name=".SearchActionActivity" />
         <activity android:name=".SceenTwoActivity" />
         <activity android:name=".SceenOneActivity" />
         <activity android:name=".MainActivity">
