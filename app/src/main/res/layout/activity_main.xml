@@ -5,13 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
         android:id="@+id/tvSceenOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="不显示光标"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/tvSceenTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动弹出软键盘"
         android:padding="10dp"
         android:layout_marginTop="15dp"/>
 

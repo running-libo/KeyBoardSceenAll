@@ -16,5 +16,11 @@ class MainActivity : AppCompatActivity() {
             intent.setClass(this, SceenOneActivity::class.java)
             startActivity(intent)
         }
+
+        tvSceenTwo.setOnClickListener {
+            var intent = Intent()
+            intent.setClass(this, SceenTwoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
